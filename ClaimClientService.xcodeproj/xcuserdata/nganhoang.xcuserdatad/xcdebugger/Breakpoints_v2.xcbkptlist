@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "98E16CDF-4696-4C8E-A41D-CC5F194B12F9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACCB50BC-52CE-4DAB-8B85-6ED171F5019B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClaimClientService/ClaimService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "ClaimService"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2661C46-54AA-4667-9BBF-D5B74D0667BE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClaimClientService/ClaimDetailSectionGenerator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "buttonSectionGenerator"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C2661C46-54AA-4667-9BBF-D5B74D0667BE - 2e373617b539e0ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ClaimClientService.buttonSectionGenerator.deinit"
+                  moduleName = "ClaimClientService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nganhoang/Downloads/ClaimClientService/ClaimClientService/ClaimDetailSectionGenerator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "C2661C46-54AA-4667-9BBF-D5B74D0667BE - 13e085f8d5edbbd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ClaimClientService.buttonSectionGenerator.__deallocating_deinit"
+                  moduleName = "ClaimClientService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nganhoang/Downloads/ClaimClientService/ClaimClientService/ClaimDetailSectionGenerator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "C2661C46-54AA-4667-9BBF-D5B74D0667BE - ddf2127a6c2519f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ClaimClientService.buttonSectionGenerator.__allocating_init() -&gt; ClaimClientService.buttonSectionGenerator"
+                  moduleName = "ClaimClientService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nganhoang/Downloads/ClaimClientService/ClaimClientService/ClaimDetailSectionGenerator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "C2661C46-54AA-4667-9BBF-D5B74D0667BE - 2aec7facfc864386"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ClaimClientService.buttonSectionGenerator.init() -&gt; ClaimClientService.buttonSectionGenerator"
+                  moduleName = "ClaimClientService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nganhoang/Downloads/ClaimClientService/ClaimClientService/ClaimDetailSectionGenerator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
