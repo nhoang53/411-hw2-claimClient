@@ -24,13 +24,17 @@ class DetailViewController : ViewController {
             detailScreenGenerator.vals[4].backgroundColor = UIColor.systemBlue
             detailScreenGenerator.lbls[4].backgroundColor = UIColor.systemBlue
             detailScreenGenerator.addBtn.backgroundColor = UIColor.systemBlue
+            detailScreenGenerator.vals[1].backgroundColor = UIColor.systemBlue
+            detailScreenGenerator.vals[2].backgroundColor = UIColor.systemBlue
         } else {
-            detailScreenGenerator.vals[4].text = "Failed to created Claim(\(cObj.title))"
+            detailScreenGenerator.vals[4].text = "Failed to created new Claim(\(cObj.title))"
             detailScreenGenerator.vals[4].textColor = UIColor.white
             detailScreenGenerator.vals[4].backgroundColor = UIColor.systemRed
             detailScreenGenerator.lbls[4].backgroundColor = UIColor.systemRed
             detailScreenGenerator.addBtn.backgroundColor = UIColor.systemRed
             detailScreenGenerator.addBtn.layer.borderColor = UIColor.systemRed.cgColor
+            detailScreenGenerator.vals[1].backgroundColor = UIColor.systemRed
+            detailScreenGenerator.vals[2].backgroundColor = UIColor.systemRed
         }
         
         // Enable/Disable the button
@@ -44,6 +48,7 @@ class DetailViewController : ViewController {
     }
 
     var detailScreenGenerator : ClaimDetailScreenGenerator!
+//    var cService = ClaimService(vc : self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +59,7 @@ class DetailViewController : ViewController {
         detailScreenGenerator.generate()
         
         // 2. Prepare data
-        cService = ClaimService(vc : self)
+        cService = ClaimService(vc : self)  // inherite from ViewController.swift
 //        cService.getAll()
         
         // 3. Set the event handling
@@ -65,10 +70,17 @@ class DetailViewController : ViewController {
     }
     
     @objc func goAddClaim(sender: UIButton) {
-        var newClaim = Claim()
-        newClaim.title = detailScreenGenerator.vals[1].text!
-        newClaim.date = detailScreenGenerator.vals[2].text!
-        cService.addClaim(cObj: newClaim)
+        if (detailScreenGenerator.vals[1].text != "" || detailScreenGenerator.vals[2].text != "") {
+            var newClaim = Claim()
+            newClaim.title = detailScreenGenerator.vals[1].text!
+            newClaim.date = detailScreenGenerator.vals[2].text!
+            cService.addClaim(cObj: newClaim)
+        } else {
+            var failClaim = Claim()
+            failClaim.message = "Fail to create new Claim"
+            refreshScreen(cObj: failClaim)
+        }
+        
         
     }
 }

@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Claim : Codable {
     var title : String
@@ -48,7 +49,7 @@ class ClaimService {
         newClaim = cObj
         
         // Implement logic using Async HTTP client API (POST method)
-        let requestUrl = "http://localhost:8020/ClaimService/add"
+        let requestUrl = "http://localhost:8025/ClaimService/add"
         var request = URLRequest(url: NSURL(string: requestUrl)! as URL)
         let jsonData : Data! = try! JSONEncoder().encode(newClaim)
         //

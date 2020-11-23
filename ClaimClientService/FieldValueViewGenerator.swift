@@ -25,8 +25,9 @@ class FieldValueViewGenerator {
         
         let val = UITextField()
         val.text = ""
-        val.backgroundColor = UIColor.lightGray
-        val.textColor = UIColor.blue
+        val.placeholder = "Enter to add"
+        val.backgroundColor = UIColor.systemGreen
+        val.textColor = UIColor.white
         stackView.addArrangedSubview(val)
         
         //lbl.setContentHuggingPriority(.defaultHigh, for: .horizontal)
